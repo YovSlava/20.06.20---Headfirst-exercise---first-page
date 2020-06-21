@@ -1,7 +1,7 @@
 
 var word = 'bottles';
 var count = 99;
-count -= 1;
+count -= 3;
 number = number - 1;
 if (count < 0) {
  ducument.write(number + " " + word + " of beer on the wall");
