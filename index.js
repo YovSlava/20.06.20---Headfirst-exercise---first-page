@@ -7,26 +7,3 @@ var guesses = 0;
 var isSunk = false;
 
 
-while (isSunk == false) {
- var guess = prompt('Pick a number between 0 and 6!')
- if (guess < 0 || guess > 6) {
-  var guesses = alert('Pick a number between 0 and 6, please!')
- } else {
-  guesses = guesses + 1;
-  if (guess == location1 || guess == location2 || guess == location3)
-   alert('Hit!');
-  hits = hits + 1;
-  if (hits == 3) {
-   isSunk = true;
-   alert('You have sunk my battleship!')
-  } else {
-   alert('Miss!')
-  }
-  var stats = "You took " + guesses + " guesses to sink the battleship, " +
-   "which means your shooting accuracy was " + (3 / guesses);
-  alert(stats);
-
-
- }
-
-}
