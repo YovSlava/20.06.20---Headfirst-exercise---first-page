@@ -10,6 +10,7 @@ var output;
 for (var i = 0; i < scores.length; i++) {
  output = "Bubble solution #" + i + " score: " + scores[i];
  console.log(output);
+ //If scores > highScore, loop-va dokato ne nameri na-golqmoto chislo, sledovatelno sledvashtite po-malki se samoizkluchvat//
  if (scores[i] > highScore) {
   highScore = scores[i];
  }
