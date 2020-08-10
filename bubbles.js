@@ -1,11 +1,18 @@
-var bubbles = [60, 40, 50, 40, 20, 68, 85, 74, 25, 52, 94];
-
-var length = bubbles.length; 
-var bestBubble
-
-for (var i = 0; i < length; i++) {
- document.write('The score of bubble #' + i + 'is ' + bubbles[i] + '.');
- if (bestBubble < bubbles[i]) {
-  bubbles[i] = bestBubble; 
+var scores = [60, 50, 60, 58, 54, 54,
+ 58, 50, 52, 54, 48, 69,
+ 34, 55, 51, 52, 44, 51,
+ 69, 64, 66, 55, 52, 61,
+ 46, 31, 57, 52, 44, 18,
+ 41, 53, 55, 61, 51, 44
+];
+var highScore = 0;
+var output;
+for (var i = 0; i < scores.length; i++) {
+ output = "Bubble solution #" + i + " score: " + scores[i];
+ console.log(output);
+ if (scores[i] > highScore) {
+  highScore = scores[i];
  }
 }
+console.log("Bubbles tests: " + scores.length);
+console.log("Highest bubble score: " + highScore);
