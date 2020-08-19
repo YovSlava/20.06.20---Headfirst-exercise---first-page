@@ -20,3 +20,6 @@ function FizzBuzz() {
 FizzBuzz();
 console.log(output);
 
+
+
+
