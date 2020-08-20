@@ -1,9 +1,9 @@
-var myLinkCollection = document.getElementsByTagName('P');
+var myLinkCollection = document.getElementsByTagName("p");
 
 for (i = 0; i < myLinkCollection.length; i++) {
-  if (myLinkCollection[i].getElementByClassName == 'linkCollection') {
-    myLinkCollection[i].onclick = funtion() {
-      document.innerHTML.style.color = '#f00';
-    }
+  if (myLinkCollection[i].className == "linkCollection") {
+    myLinkCollection[i].addEventListener('click', function () {
+      this.style.color = 'red';
+    })
   }
-};
+}
