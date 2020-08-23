@@ -1,3 +1,5 @@
-var stringText = "I am text";
-var probe = typeof stringText;
-console.log(probe);
+function Housekeeper (name, age, experience) {
+  this.name = name
+  this.age = age
+  this.experience = experience
+}
