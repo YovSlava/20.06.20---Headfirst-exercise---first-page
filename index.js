@@ -17,3 +17,8 @@ var toy = new Duck("quack quack");
 toy.quack();
 console.log(typeof toy);
 console.log(toy instanceof Duck);
+
+
+
+
+
