@@ -22,7 +22,7 @@ console.log(toy instanceof Duck);
 
 
 function factorial(n) {
-for (var i =n-1; i>0; i--) {
+for (var i=n-1; i>0; i--) {
     n*=i
 }
 return n
